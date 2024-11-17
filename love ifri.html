@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Rencontre - UAC IFRI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="file"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site de Rencontre - UAC IFRI</h1>
+        <p>Rencontrez vos camarades d'université et tissez des liens NB: pas de lien toxique ou ayant rapport
+            à l'amour hein on vous connait vous les  béninois .D'autres vont commencer à chercher sex frends ici.
+        </p>
+    </header>
+
+    <section>
+        <h2>Créez votre Profil</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Nom Complet :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sex">Sexe :</label>
+            <select id="sex" name="sex">
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="photo">Photo de Profil :</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="dateOfBirth">Date de Naissance :</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+
+            <label for="hobbies">Centres d'intérêt :</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="Ex: sport, musique, cinéma" required>
+
+            <label for="bio">Bio :</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Parlez un peu de vous..." required></textarea>
+
+            <button type="submit" class="btn-submit">Créer Mon Profil</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Ce site a été créé par Freddy Parker élève en première année à IFRI 
+        </p>
+        <p>Contact : <a href="tel:+22944466240" style="color: #fff;">+229 44466240</a></p>
+    </footer>
+
+</body>
+</html>
